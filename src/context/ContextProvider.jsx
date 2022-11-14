@@ -6,9 +6,9 @@ const ContextProvider = ({children}) => {
     const [currentUser, setCurrentUser] = useState()
 
   return (
-    <AuthContext.Provider value={{currentUser}}>
+    <MainContext.Provider value={{currentUser}}>
         {children}
-    </AuthContext.Provider>
+    </MainContext.Provider>
   )
 }
 
