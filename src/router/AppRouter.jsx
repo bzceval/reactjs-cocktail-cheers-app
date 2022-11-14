@@ -1,5 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Footer from '../components/Footer/Footer'
 import Navbar from '../components/Navbar/Navbar'
 import DrinkDetail from '../pages/DrinkDetail'
 import Drinks from '../pages/Drinks'
@@ -15,7 +16,8 @@ const AppRouter = () => {
             <Route path='/places-drink' element={<PlacesDrink/>}/>
             <Route path='/drinks' element={<Drinks />}/>
             <Route path='/drinks/:id' element={<DrinkDetail/>}/>
-        </Routes>        
+        </Routes> 
+    <Footer />           
     </BrowserRouter>
   )
 }
