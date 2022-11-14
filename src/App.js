@@ -1,12 +1,15 @@
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
+import AppRouter from "./router/AppRouter";
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
+    <AppRouter>
+      <div className="App">
       <h1>Hello</h1>
     </div>
+    </AppRouter>
+    
   );
 }
 
