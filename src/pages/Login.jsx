@@ -52,7 +52,7 @@ const Login = () => {
                     </button>
                     <p className="text-center mt-3">
                       Do you have an account ?{" "}
-                      <Link to="/register">Sign Up</Link>
+                      <Link to="/sign-up">Sign Up</Link>
                     </p>
                   </div>
                   <hr className="my-4" />
