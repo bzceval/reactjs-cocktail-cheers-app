@@ -10,10 +10,6 @@ const PlacesDrink = ({ drinkType }) => {
   const [images, setImages] = useState("");
   const [loading, setLoading] = useState(false);
 
-  //!!!!!!!!!!!!!!!!!!!!!!!!!!!!! VARIABLES
-
-  let abc;
-
   //!!!!!!!!!!!!!!!!!!!!!!!!!!!!! METHODS
   const getLocation = () => {
     if (!navigator.geolocation) {
