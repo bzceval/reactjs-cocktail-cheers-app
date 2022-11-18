@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import "../../index.css";
 
 const Drink = ({ selectDrink }) => {
   const [queryDrink, setQueryDrink] = useState([]);
@@ -16,22 +17,37 @@ const Drink = ({ selectDrink }) => {
 
   return (
     <div className="container">
-    <div className="row">
-          {queryDrink?.map((item) => {
-            return (
-              <div className="col-md-4 my-5">
-              <div key={item?.idDrink} className="card shadow-sm">
-                <img src={item?.strDrinkThumb} className="img-fluid" alt="" />
-                <div className="card-body">
-                  <h6 className="text-center text-warning">{item?.strDrink}</h6>
+      <div className="row ">
+        {queryDrink?.map((item) => {
+          return (
+            <div className="col-md-4 flip-card d-flex justify-content-center">
+              <div className="flip-card-inner">
+                <div className="flip-card-front">
+                  <div key={item?.idDrink} className="card shadow-sm">
+                    <img
+                      src={item?.strDrinkThumb}
+                      className="img-fluid"
+                      alt=""
+                    />
+                    <div className="card-body">
+                      <h6 className="text-center text-warning">
+                        {item?.strDrink}
+                      </h6>
+                    </div>
                   </div>
+                </div>
+                <div class="flip-card-back d-flex justify-content-center align-items-center">
+                  <button className="btn btn-outline-primary">
+                    Go Details
+                  </button>
+                </div>
               </div>
-              </div>
-            );
-          })} 
-          </div>
-          </div>
-  )
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
 };
 
 export default Drink;
