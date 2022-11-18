@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import "../index.css";
 
 const PlacesDrink = ({ drinkType }) => {
   //!!!!!!!!!!!!!!!!!!!!!!!!!!!!! HOOKS
@@ -9,6 +10,7 @@ const PlacesDrink = ({ drinkType }) => {
   const [places, setPlaces] = useState([]);
   const [images, setImages] = useState("");
   const [loading, setLoading] = useState(false);
+  const [searchData, setSearchData] = useState("");
 
   //!!!!!!!!!!!!!!!!!!!!!!!!!!!!! METHODS
   const getLocation = () => {
@@ -34,7 +36,7 @@ const PlacesDrink = ({ drinkType }) => {
 
   const getData = async () => {
     setLoading(true);
-    const urlPlaces = `http://list.ly/api/v4/search/place?ll=${latitude}%2C${longtitude}&q=çay`;
+    const urlPlaces = `http://list.ly/api/v4/search/place?ll=${latitude}%2C${longtitude}&q=${searchData}`;
     try {
       const { data } = await axios(urlPlaces);
       console.log(data);
@@ -48,17 +50,27 @@ const PlacesDrink = ({ drinkType }) => {
   };
 
   useEffect(() => {
-    getData();
-  }, [latitude, longtitude]);
+    getLocation();
+  }, []);
 
   return (
     <div className="container text-center">
-      <button
-        className="btn btn-secondary px-4 py-2 text-center"
-        onClick={getLocation}>
-        Click Me
-      </button>
+      <div className="mt-3">
+        <input
+          type="search"
+          className="form-control"
+          id="floatingInputValue"
+          placeholder="Search drinks...."
+          onChange={(e) => setSearchData(e.target.value)}
+        />
 
+        <button
+          className="btn btn-outline-success px-4 py-2 mt-2"
+          onClick={getData}
+          disabled={!searchData}>
+          Search
+        </button>
+      </div>
       {loading && (
         <img
           src="https://flevix.com/wp-content/uploads/2019/12/Quarter-Circle-Loading-Image-1.gif"
@@ -86,8 +98,8 @@ const PlacesDrink = ({ drinkType }) => {
                 </p> */}
                 {/* {item?.description.slice(0, abc + 6)} */}
                 <p className="card-text">{item?.formatted_address}</p>
-                <small className="text-truncate" style={{ maxWidth: "150px" }}>
-                  <i>{item?.reviews[0]?.text}</i>
+                <small className="comments">
+                  <em>{item?.reviews[0]?.text}</em>
                 </small>
                 <div className="d-flex justify-content-center align-bottom text-center w-100">
                   <a href={item?.url} className="btn btn-danger w-75">
