@@ -18,7 +18,7 @@ const Drink = ({ selectDrink }) => {
   }, [SELECT_QUERY]);
 
   return (
-    <div className="container">
+  <div className="container">
       <div className="row ">
         {queryDrink?.map((item) => {
           const { idDrink, strDrinkThumb, strDrink } = item;
