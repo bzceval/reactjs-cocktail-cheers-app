@@ -12,12 +12,12 @@ body {
 }
 header {
   background-color: rgba(0, 0, 0, 0.3) !important;
+  font-family: "Montserrat", sans-serif;
 }
 header .btn-warning{
   background-color: #2d304a; 
   color: #d8d7da !important; 
-  border: 2px solid #2d304a;
-  font-family: "Montserrat", sans-serif;
+  border: 2px solid #2d304a; 
 }
 header .btn-warning:hover{
   background-color: #d8d7da !important; 
@@ -125,4 +125,14 @@ header .btn-warning:hover{
 .select-container option {
   color: #d8d7da;
   background-color: rgba(0, 0, 0, 0.1) !important;
+}
+footer {
+  background-color: rgba(0, 0, 0, 0.3) !important;
+  font-family: "Montserrat", sans-serif; 
+}
+footer a {
+  text-decoration: none !important;
+  color: #d8d7da !important;
+  margin-left: 10px;
+  margin-right: 10px;
 }
