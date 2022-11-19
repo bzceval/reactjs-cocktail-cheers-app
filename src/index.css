@@ -52,6 +52,7 @@ body {
   height: 200px;
   transition: transform 0.8s;
   transform-style: preserve-3d;
+  text-align: center;
 }
 
 .flip-card:hover .flip-card-inner {
