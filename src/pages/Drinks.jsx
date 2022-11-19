@@ -27,13 +27,12 @@ const Drinks = () => {
               <option> {drink.strCategory} </option>
             ))}
           </select>
-        </div>
-        <div className="container">
-        <h1 className="text-center text-warning mt-5">{selectDrink}</h1>
-
+        </div> 
+        <div className="drinks-card-container my-5">
+        <h1 className="text-center">{selectDrink}</h1>
         {selectDrink && <SelectDrink selectDrink={selectDrink} />}
-      </div>
-    </div>
+        </div>
+      </div> 
   );
 };
 
