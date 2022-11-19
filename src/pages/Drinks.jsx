@@ -24,7 +24,7 @@ const Drinks = () => {
       <select onChange={(e)=>setselectDrink(e.target.value)}>
         <option selected>Please Select Drink </option>
         {
-          drinksCategory.map((drink, i) =><option> {drink.strCategory} </option>)
+          drinksCategory.map((drink) =><option> {drink.strCategory} </option>)
         }
       </select>
       <h1 className='text-center text-warning mt-5'>{selectDrink}</h1>
