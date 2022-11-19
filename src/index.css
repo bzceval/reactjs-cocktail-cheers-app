@@ -2,8 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
 body {
   margin: 0; 
-  background-color: #2d304a !important;
-  height: 100vh;
+  background-color: #2d304a !important; 
   color: #d8d7da !important;
 }  
 .nav-link { 
@@ -135,4 +134,16 @@ footer a {
   color: #d8d7da !important;
   margin-left: 10px;
   margin-right: 10px;
+} 
+.nested {
+  display: flex;
+  justify-content: center;
 }
+.row-container {
+  font-family: "Montserrat", sans-serif;
+  width: 60%; 
+}
+.row-container img {
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+} 

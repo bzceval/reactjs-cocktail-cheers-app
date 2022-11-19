@@ -34,11 +34,7 @@ const Drink = ({ selectDrink }) => {
                   </div>
                 </div>
                 <div className="flip-card-back d-flex justify-content-center align-items-center">
-                  <button
-                    className="btn"
-                    onClick={() =>
-                      navigate(`/drinks/${idDrink}`, { state: item })
-                    }>
+                  <button className="btn" onClick={() => navigate(`/drinks/${idDrink}`, { state: item }) }>
                     Detail
                   </button>
                 </div>
