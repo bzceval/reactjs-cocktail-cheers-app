@@ -1,16 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Raleway:wght@300;400;500;600;700&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
 body {
   margin: 0;
-  font-family: "Raleway", sans-serif;
-}
+  font-family: "Raleway", sans-serif; 
+  background-color: #2d304a !important;
+  height: 100vh;
+  color: #d8d7da !important;
+} 
 .brand-name {
   font-family: "Great Vibes", cursive;
   font-size: 2.5rem;
-}
+} 
 .nav-link {
   font-size: 1.2rem !important;
-}
+} 
 
 .btn-login {
   font-size: 0.9rem;
@@ -69,3 +72,24 @@ body {
 .flip-card-back {
   transform: rotateY(180deg);
 }
+.select-container{
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.select-container h4 {
+  color: #d8d7da;
+  font-family: 'Montserrat', sans-serif;
+} 
+.select-container select {
+  color: #d8d7da;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: none;
+  width: 60%;
+  height: 2.5rem;
+  border-radius: 5px;
+  padding: 0 1rem;
+  margin-top: 20px;
+} 
+.select-container option {
+  color: #d8d7da;
+  background-color: rgba(0, 0, 0, 0.1);
+} 
