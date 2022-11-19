@@ -23,20 +23,19 @@ const Drink = ({ selectDrink }) => {
         {queryDrink?.map((item) => {
           const { idDrink, strDrinkThumb, strDrink } = item;
           return (
-            <div className="col-md-4 flip-card mb-4  d-flex justify-content-center ">
+            <div className="col-md-4 flip-card my-5 d-flex justify-content-center ">
               <div className="flip-card-inner">
                 <div className="flip-card-front">
                   <div key={idDrink} className="card shadow-sm">
                     <img src={strDrinkThumb} className="img-fluid" alt="" />
                     <div className="card-body">
-                      <p>{idDrink}</p>
-                      <h6 className="text-center text-warning">{strDrink}</h6>
+                      <p className="text-center">{strDrink}</p>
                     </div>
                   </div>
                 </div>
                 <div className="flip-card-back d-flex justify-content-center align-items-center">
                   <button
-                    className="btn btn-danger my-4  px-4 py-2"
+                    className="btn"
                     onClick={() =>
                       navigate(`/drinks/${idDrink}`, { state: item })
                     }>
