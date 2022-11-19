@@ -36,7 +36,7 @@ const Drink = ({ selectDrink }) => {
                 </div>
                 <div className="flip-card-back d-flex justify-content-center align-items-center">
                   <button
-                    className="btn btn-danger my-3  px-4 py-2"
+                    className="btn btn-danger my-4  px-4 py-2"
                     onClick={() =>
                       navigate(`/drinks/${idDrink}`, { state: item })
                     }>
