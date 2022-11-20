@@ -18,7 +18,7 @@ const Drink = ({ selectDrink }) => {
   }, [SELECT_QUERY]);
 
   return (
-  <div className="container">
+    <div className="container">
       <div className="row ">
         {queryDrink?.map((item) => {
           const { idDrink, strDrinkThumb, strDrink } = item;
@@ -34,7 +34,11 @@ const Drink = ({ selectDrink }) => {
                   </div>
                 </div>
                 <div className="flip-card-back d-flex justify-content-center align-items-center">
-                  <button className="btn" onClick={() => navigate(`/drinks/${idDrink}`, { state: item }) }>
+                  <button
+                    className="btn button-hover w-50"
+                    onClick={() =>
+                      navigate(`/drinks/${idDrink}`, { state: item })
+                    }>
                     Detail
                   </button>
                 </div>
