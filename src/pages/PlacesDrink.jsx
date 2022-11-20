@@ -80,12 +80,12 @@ const PlacesDrink = ({ drinkType }) => {
             className="img-fluid"
           />
         )}
-        <div className="d-flex flex-wrap justify-content-center mb-5">
+        <div className="places d-flex flex-wrap justify-content-center mb-5">
           {places.map((item, index) => {
             return (
               <div
-                className="card col-12 m-3 bg-secondary text-light"
-                style={{ width: "17rem", height: "40rem", overflow: "hidden" }}
+                className="card col-12 m-3"
+                style={{ width: "17rem", overflow: "hidden" }}
                 key={index}
               >
                 <img
@@ -95,13 +95,16 @@ const PlacesDrink = ({ drinkType }) => {
                   alt="Card cap"
                 />
                 <div className="card-body">
-                  <h5 className="card-title">{item?.name}</h5> 
-                  <p className="card-text">{item?.formatted_address}</p>
+                  <h5 className="card-title">{item?.name.toUpperCase()}</h5> 
+                  <hr />
+                  <p className="card-text"> <span>Address:</span><br/> {item?.formatted_address}</p>
+                  
                   <small className="comments">
+                    <p>Comment: </p>
                     <em>{item?.reviews[0]?.text}</em>
                   </small>
-                  <div className="d-flex justify-content-center align-bottom text-center w-100">
-                    <a href={item?.url} className="btn btn-danger w-75">
+                  <div className="mt-4 d-flex justify-content-center align-bottom text-center w-100">
+                    <a href={item?.url} className="btn btn-danger w-100">
                       View Map
                     </a>
                   </div>

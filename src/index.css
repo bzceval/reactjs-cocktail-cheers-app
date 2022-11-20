@@ -41,12 +41,7 @@ header .btn-warning:hover{
 .form-bg {
   opacity: 0.93;
 }
-.comments {
-  display: -webkit-box;
-  -webkit-line-clamp: 2; /*Kaç Stırda sınırlamak istiyorsanız */
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
+
 .drinks-card-container h1 {
   font-family: "Great Vibes", cursive;
   font-size: 3rem !important;
@@ -226,4 +221,39 @@ animation: borderRadial var(--d) linear infinite forwards;
     --gradX: 50%;
     --gradY: 0%;
   }
+}
+.places .card {
+  font-family: "Montserrat", sans-serif;
+  background-color: rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  color: #d8d7da;
+}
+.places .card .card-title {
+  font-size: 1.2rem !important;
+}
+.places .card .card-text {
+  font-size: .8rem !important;
+  line-height: 1.1rem;
+}
+.places .card .card-text span{
+  font-weight: bold;
+} 
+.comments {
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /*Kaç Stırda sınırlamak istiyorsanız */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-size: 12px !important;
+  line-height: 14px!important;
+}
+.comments p {
+  margin-bottom: 5px;
+  font-weight: bold
+}
+.btn-danger {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+  border: none !important;
+  color: #d8d7da !important; 
+  font-size: 13px !important;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
