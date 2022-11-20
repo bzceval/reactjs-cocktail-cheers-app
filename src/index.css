@@ -38,18 +38,11 @@ header .btn-warning:hover{
   background-image: url("https://picsum.photos/1000/800");
   background-size: cover;
 }
-
 .form-bg {
   opacity: 0.93;
 }
 
-.comments {
-  display: -webkit-box;
-  -webkit-line-clamp: 2; /*Kaç Stırda sınırlamak istiyorsanız */
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-.drinks-card-container h1{
+.drinks-card-container h1 {
   font-family: "Great Vibes", cursive;
   font-size: 3rem !important;
   text-shadow: 2px 2px rgba(0, 0, 0, 0.726);
@@ -67,7 +60,6 @@ header .btn-warning:hover{
   height: 300px;
   perspective: 150rem;
 }
-
 .flip-card-inner {
   position: relative;
   width: 200px;
@@ -75,7 +67,6 @@ header .btn-warning:hover{
   transition: transform 0.8s;
   transform-style: preserve-3d;
 }
-
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
   background-color: rgba(0, 0, 0, 0.1);
@@ -83,7 +74,6 @@ header .btn-warning:hover{
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
   border-radius: 5px;
 }
-
 .flip-card:hover .btn {
   background-color: #2d304a !important;
   border: none !important;
@@ -92,7 +82,6 @@ header .btn-warning:hover{
   font-family: "Montserrat", sans-serif;
   padding: 0.6rem 0;
 }
-
 .flip-card-front,
 .flip-card-back {
   position: absolute;
@@ -100,7 +89,6 @@ header .btn-warning:hover{
   height: 300px;
   backface-visibility: hidden;
 }
-
 .flip-card-back {
   transform: rotateY(180deg);
 }
@@ -147,3 +135,125 @@ footer a {
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
   border-radius: 5px;
 } 
+/* Search */
+.places-container .search-container{
+  border-radius: 10px;
+  border: 3px dashed;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.1);  
+  border-image: radial-gradient(
+    ellipse at var(--gradX) var(--gradY),
+    var(--c1),
+    var(--c1) 10%,
+    var(--c2) 40%
+  )
+  30;
+animation: borderRadial var(--d) linear infinite forwards;
+}
+.places-container input { 
+  font-family: "Montserrat", sans-serif;  
+  color: #d8d7da;  
+  background-color: rgba(0, 0, 0, 0.1);
+  border: none !important;
+  width: 60%;
+  margin: auto;
+  padding: 10px 0px !important;
+  font-size: .8rem;
+}
+.places-container input:focus{
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #d8d7da;
+}
+.places-container input::placeholder{ 
+  color: #d8d7da85;
+}
+.places-container .btn-outline-success{
+  background-color: rgba(0, 0, 0, 0.3) !important; 
+  color: #d8d7da !important; 
+  border: 2px solid #2d304a !important; 
+  font-size: .9rem;
+}
+.places-container .btn-outline-success:hover{
+  background-color: #d8d7da88 !important; 
+  color: #2d304a !important;
+  border: 2px solid #2d304a !important;
+} 
+:root {
+  --d: 2500ms;
+  --angle: 90deg;
+  --gradX: 100%;
+  --gradY: 50%;
+  --c1: rgb(169, 168, 255);
+  --c2: #2d304a;
+}
+@property --gradX {
+  syntax: "<percentage>";
+  initial-value: 50%;
+  inherits: true;
+}
+@property --gradY {
+  syntax: "<percentage>";
+  initial-value: 0%;
+  inherits: true;
+}
+@keyframes borderRadial {
+  0% {
+    --gradX: 50%;
+    --gradY: 0%;
+  }
+  20% {
+    --gradX: 100%;
+    --gradY: 50%;
+  }
+  40% {
+    --gradX: 100%;
+    --gradY: 100%;
+  }
+  60% {
+    --gradX: 0%;
+    --gradY: 100%;
+  }
+  80% {
+    --gradX: 0%;
+    --gradY: 0%;
+  }
+  100% {
+    --gradX: 50%;
+    --gradY: 0%;
+  }
+}
+.places .card {
+  font-family: "Montserrat", sans-serif;
+  background-color: rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  color: #d8d7da;
+}
+.places .card .card-title {
+  font-size: 1.2rem !important;
+}
+.places .card .card-text {
+  font-size: .8rem !important;
+  line-height: 1.1rem;
+}
+.places .card .card-text span{
+  font-weight: bold;
+} 
+.comments {
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /*Kaç Stırda sınırlamak istiyorsanız */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-size: 12px !important;
+  line-height: 14px!important;
+}
+.comments p {
+  margin-bottom: 5px;
+  font-weight: bold
+}
+.btn-danger {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+  border: none !important;
+  color: #d8d7da !important; 
+  font-size: 13px !important;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
