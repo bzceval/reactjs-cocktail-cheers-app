@@ -54,62 +54,62 @@ const PlacesDrink = ({ drinkType }) => {
   }, []);
 
   return (
-    <div className="container text-center">
-      <div className="mt-3">
-        <input
-          type="search"
-          className="form-control"
-          id="floatingInputValue"
-          placeholder="Search drinks...."
-          onChange={(e) => setSearchData(e.target.value)}
-        />
+    <div className="places-container">
+       <div className="search-container pt-5 pb-5">
+          {/* <h5 className="mt-3 mb-3 text-center">Search Device Coffee</h5> */}
+          <input
+            type="search"
+            className="form-control text-center" placeholder="Search Device Coffee"
+            id="floatingInputValue" 
+            onChange={(e) => setSearchData(e.target.value)}
+          />
 
-        <button
-          className="btn btn-outline-success px-4 py-2 mt-2"
-          onClick={getData}
-          disabled={!searchData}>
-          Search
-        </button>
-      </div>
-      {loading && (
-        <img
-          src="https://flevix.com/wp-content/uploads/2019/12/Quarter-Circle-Loading-Image-1.gif"
-          alt="loading"
-          className="img-fluid"
-        />
-      )}
-      <div className="d-flex flex-wrap justify-content-center mb-5">
-        {places.map((item, index) => {
-          return (
-            <div
-              className="card col-12 m-3 bg-secondary text-light"
-              style={{ width: "17rem", height: "40rem", overflow: "hidden" }}
-              key={index}>
-              <img
-                className="card-img-top"
-                style={{ width: "280px", height: "300px" }}
-                src={item?.photos[0]?.fetched_url || item?.icon}
-                alt="Card cap"
-              />
-              <div className="card-body">
-                <h5 className="card-title">{item?.name}</h5>
-                {/* <p className="d-none">
-                  {(abc = item?.description.indexOf("Turkey"))}
-                </p> */}
-                {/* {item?.description.slice(0, abc + 6)} */}
-                <p className="card-text">{item?.formatted_address}</p>
-                <small className="comments">
-                  <em>{item?.reviews[0]?.text}</em>
-                </small>
-                <div className="d-flex justify-content-center align-bottom text-center w-100">
-                  <a href={item?.url} className="btn btn-danger w-75">
-                    View Map
-                  </a>
+          <button
+            className="btn btn-outline-success px-4 mt-3"
+            onClick={getData}
+            disabled={!searchData}
+          >
+            Search
+          </button>
+        </div>
+      <div className="container my-5">
+        {loading && (
+          <img
+            src="https://flevix.com/wp-content/uploads/2019/12/Quarter-Circle-Loading-Image-1.gif"
+            alt="loading"
+            className="img-fluid"
+          />
+        )}
+        <div className="d-flex flex-wrap justify-content-center mb-5">
+          {places.map((item, index) => {
+            return (
+              <div
+                className="card col-12 m-3 bg-secondary text-light"
+                style={{ width: "17rem", height: "40rem", overflow: "hidden" }}
+                key={index}
+              >
+                <img
+                  className="card-img-top"
+                  style={{ width: "280px", height: "300px" }}
+                  src={item?.photos[0]?.fetched_url || item?.icon}
+                  alt="Card cap"
+                />
+                <div className="card-body">
+                  <h5 className="card-title">{item?.name}</h5> 
+                  <p className="card-text">{item?.formatted_address}</p>
+                  <small className="comments">
+                    <em>{item?.reviews[0]?.text}</em>
+                  </small>
+                  <div className="d-flex justify-content-center align-bottom text-center w-100">
+                    <a href={item?.url} className="btn btn-danger w-75">
+                      View Map
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
     </div>
   );
