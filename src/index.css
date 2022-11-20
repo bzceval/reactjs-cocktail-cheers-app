@@ -1,25 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Raleway:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
 body {
-  margin: 0; 
-  background-color: #2d304a !important; 
+  margin: 0;
+  background-color: #2d304a !important;
   color: #d8d7da !important;
-}  
-.nav-link { 
+}
+.nav-link {
   color: #d8d7da !important;
-  font-family: "Montserrat", sans-serif; 
+  font-family: "Montserrat", sans-serif;
 }
 header {
   background-color: rgba(0, 0, 0, 0.3) !important;
   font-family: "Montserrat", sans-serif;
 }
-header .btn-warning{
-  background-color: #2d304a; 
-  color: #d8d7da !important; 
-  border: 2px solid #2d304a; 
+header .btn-warning {
+  background-color: #2d304a;
+  color: #d8d7da !important;
+  border: 2px solid #2d304a;
 }
-header .btn-warning:hover{
-  background-color: #d8d7da !important; 
+header .btn-warning:hover {
+  background-color: #d8d7da !important;
   color: #2d304a !important;
   border: 2px solid #2d304a;
 }
@@ -49,13 +49,13 @@ header .btn-warning:hover{
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-.drinks-card-container h1{
+.drinks-card-container h1 {
   font-family: "Great Vibes", cursive;
   font-size: 3rem !important;
   text-shadow: 2px 2px rgba(0, 0, 0, 0.726);
 }
 .card {
-  background-color: rgba(0, 0, 0, 0.1) !important; 
+  background-color: rgba(0, 0, 0, 0.1) !important;
   border: none !important;
   color: rgb(216, 215, 218);
   font-family: "Montserrat", sans-serif;
@@ -127,23 +127,85 @@ header .btn-warning:hover{
 }
 footer {
   background-color: rgba(0, 0, 0, 0.3) !important;
-  font-family: "Montserrat", sans-serif; 
+  font-family: "Montserrat", sans-serif;
 }
 footer a {
   text-decoration: none !important;
   color: #d8d7da !important;
   margin-left: 10px;
   margin-right: 10px;
-} 
+}
 .nested {
   display: flex;
   justify-content: center;
 }
 .row-container {
   font-family: "Montserrat", sans-serif;
-  width: 60%; 
+  width: 60%;
 }
 .row-container img {
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
   border-radius: 5px;
-} 
+}
+
+select option:nth-child(1) {
+  background: #2d304a !important;
+  color: rgb(216, 215, 218);
+}
+
+.option-drinks:nth-child(2) {
+  background: #2d304a !important;
+  color: rgb(216, 215, 218);
+}
+.option-drinks:nth-child(3) {
+  background: #2d304a !important;
+  color: rgb(216, 215, 218);
+}
+.option-drinks:nth-child(4) {
+  background: #2d304a !important;
+  color: rgb(216, 215, 218);
+}
+.option-drinks:nth-child(5) {
+  background: #2d304a !important;
+  color: rgb(216, 215, 218);
+}
+.option-drinks:nth-child(6) {
+  background: #2d304a !important;
+  color: rgb(216, 215, 218);
+}
+.option-drinks:nth-child(7) {
+  background: #2d304a !important;
+  color: rgb(216, 215, 218);
+}
+.option-drinks:nth-child(8) {
+  background: #2d304a !important;
+  color: rgb(216, 215, 218);
+}
+.option-drinks:nth-child(9) {
+  background: #2d304a !important;
+  color: rgb(216, 215, 218);
+}
+.option-drinks:nth-child(10) {
+  background: #2d304a !important;
+  color: rgb(216, 215, 218);
+}
+.option-drinks:nth-child(11) {
+  background: #2d304a !important;
+  color: rgb(216, 215, 218);
+}
+.option-drinks:nth-child(12) {
+  background: #2d304a !important;
+  color: rgb(216, 215, 218);
+}
+.option-drinks:nth-child(13) {
+  background: #2d304a !important;
+  color: rgb(216, 215, 218);
+}
+.option-drinks:nth-child(14) {
+  background: #2d304a !important;
+  color: rgb(216, 215, 218);
+}
+.option-drinks:nth-child(15) {
+  background: #2d304a !important;
+  color: rgb(216, 215, 218);
+}

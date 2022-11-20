@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import SelectDrink from "../components/SelectDrinks/SelectDrink";
+import "../index.css";
 
 const Drinks = () => {
   const [drinksCategory, setDrinksCategory] = useState([]);
@@ -19,20 +20,20 @@ const Drinks = () => {
 
   return (
     <div className="drinks-container text-center">
-        <div className="select-container py-5">
-          <h4>Please Select Drink</h4>
-          <select onChange={(e) => setselectDrink(e.target.value)}>
-            <option selected>Please Select Drink </option>
-            {drinksCategory.map((drink) => (
-              <option> {drink.strCategory} </option>
-            ))}
-          </select>
-        </div> 
-        <div className="drinks-card-container my-5">
+      <div className="select-container py-5">
+        <h4>Please Select Drink</h4>
+        <select onChange={(e) => setselectDrink(e.target.value)}>
+          <option selected>Please Select Drink </option>
+          {drinksCategory.map((drink) => (
+            <option className="option-drinks">{drink.strCategory}</option>
+          ))}
+        </select>
+      </div>
+      <div className="drinks-card-container my-5">
         <h1 className="text-center">{selectDrink}</h1>
         {selectDrink && <SelectDrink selectDrink={selectDrink} />}
-        </div>
-      </div> 
+      </div>
+    </div>
   );
 };
 

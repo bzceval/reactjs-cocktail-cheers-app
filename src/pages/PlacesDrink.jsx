@@ -1,16 +1,19 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import "../index.css";
 
 const PlacesDrink = ({ drinkType }) => {
   //!!!!!!!!!!!!!!!!!!!!!!!!!!!!! HOOKS
-  const [latitude, setLatitude] = useState(null);
-  const [longtitude, setLongtitude] = useState(null);
+  const { state: drink } = useLocation();
+
+  const [latitude, setLatitude] = useState(drink?.latitude);
+  const [longtitude, setLongtitude] = useState(drink?.longtitude);
   const [status, setStatus] = useState(null);
   const [places, setPlaces] = useState([]);
   const [images, setImages] = useState("");
   const [loading, setLoading] = useState(false);
-  const [searchData, setSearchData] = useState("");
+  const [searchData, setSearchData] = useState(drink?.drink);
 
   //!!!!!!!!!!!!!!!!!!!!!!!!!!!!! METHODS
   const getLocation = () => {
@@ -36,21 +39,30 @@ const PlacesDrink = ({ drinkType }) => {
 
   const getData = async () => {
     setLoading(true);
+
     const urlPlaces = `http://list.ly/api/v4/search/place?ll=${latitude}%2C${longtitude}&q=${searchData}`;
     try {
       const { data } = await axios(urlPlaces);
-      console.log(data);
+      // console.log(data);
       setImages(data.results);
       setPlaces(data.raw_results);
     } catch (error) {
       console.log(error + "error");
+      console.log(status);
     } finally {
       setLoading(false);
     }
   };
 
   useEffect(() => {
-    getLocation();
+    if (drink) {
+      setLatitude(drink?.latitude);
+      setLongtitude(drink?.longtitude);
+      setSearchData(drink?.drink);
+      getData();
+    } else {
+      getLocation();
+    }
   }, []);
 
   return (
@@ -102,7 +114,11 @@ const PlacesDrink = ({ drinkType }) => {
                   <em>{item?.reviews[0]?.text}</em>
                 </small>
                 <div className="d-flex justify-content-center align-bottom text-center w-100">
-                  <a href={item?.url} className="btn btn-danger w-75">
+                  <a
+                    href={item?.url}
+                    className="btn btn-danger w-75"
+                    target="_blank"
+                    rel="noreferrer">
                     View Map
                   </a>
                 </div>
