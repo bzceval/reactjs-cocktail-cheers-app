@@ -126,7 +126,7 @@ const PlacesDrink = ({ drinkType }) => {
                       target="_blank"
                       rel="noreferrer"
                       href={item?.url}
-                      className="btn button-hover h-5 w-100">
+                      className="btn button-hover d-flex justify-content-center align-items-center w-100">
                       View Map
                     </a>
                   </div>
