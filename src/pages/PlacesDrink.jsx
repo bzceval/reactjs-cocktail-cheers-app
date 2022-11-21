@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
+import loadingGif from "../helpers/loading gif.gif";
 import "../index.css";
 
 const PlacesDrink = ({ drinkType }) => {
@@ -51,6 +52,7 @@ const PlacesDrink = ({ drinkType }) => {
       console.log(status);
     } finally {
       setLoading(false);
+      setSearchData("");
     }
   };
 
@@ -74,6 +76,7 @@ const PlacesDrink = ({ drinkType }) => {
           className="form-control text-center"
           placeholder="Search Device Coffee"
           id="floatingInputValue"
+          value={searchData}
           onChange={(e) => setSearchData(e.target.value)}
         />
 
@@ -85,13 +88,13 @@ const PlacesDrink = ({ drinkType }) => {
         </button>
       </div>
       <div className="container my-5">
-        {loading && (
-          <img
-            src="https://flevix.com/wp-content/uploads/2019/12/Quarter-Circle-Loading-Image-1.gif"
-            alt="loading"
-            className="img-fluid"
-          />
-        )}
+        <div className="w-full text-center">
+          <div className="">
+            {loading && (
+              <img src={loadingGif} alt="loading" className="img-fluid" />
+            )}
+          </div>
+        </div>
         <div className="places d-flex flex-wrap justify-content-center mb-5">
           {places.map((item, index) => {
             return (
@@ -123,7 +126,7 @@ const PlacesDrink = ({ drinkType }) => {
                       target="_blank"
                       rel="noreferrer"
                       href={item?.url}
-                      className="btn btn-danger w-100">
+                      className="btn button-hover h-5 w-100">
                       View Map
                     </a>
                   </div>

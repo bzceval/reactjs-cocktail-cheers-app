@@ -325,7 +325,8 @@ select option:nth-child(1) {
 /********* HOVER BUTTON *********/
 
 .button-hover {
-  background-color: rgba(0, 0, 0, 0.3) !important;
+  /* background-color: rgba(0, 0, 0, 0.3) !important; */
+  background-color: #282b42 !important;
   color: #d8d7da !important;
   border: 2px solid #2d304a !important;
   font-family: "Montserrat", sans-serif !important;
@@ -384,7 +385,7 @@ select option:nth-child(1) {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #111;
+  background: #282b42;
   left: 0;
   top: 0;
   border-radius: 10px;
