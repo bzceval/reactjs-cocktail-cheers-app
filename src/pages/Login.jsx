@@ -92,7 +92,7 @@ const Login = () => {
                             Sign In
                           </button>
                           <p className="text-center mt-3">
-                            Do you have an account ?
+                            Don't have an account ?{" "}
                             <Link to="/sign-up">Sign Up</Link>
                           </p>
                         </div>
