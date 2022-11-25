@@ -1,9 +1,29 @@
-import React from 'react'
+import React from "react";
 
 const Home = () => {
   return (
-    <div>Home</div>
-  )
-}
+    <>
+        <div className="hero">
+        <div className="context">
+          <h1>Buraya Açıklamalar gelmeli</h1>
+        </div>
+        <div className="area">
+          <ul className="circles">
+            <li />
+            <li />
+            <li />
+            <li />
+            <li />
+            <li />
+            <li />
+            <li />
+            <li />
+            <li />
+          </ul>
+        </div>
+      </div>
+    </>
+  );
+};
 
-export default Home
+export default Home;
