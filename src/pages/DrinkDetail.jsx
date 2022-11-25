@@ -93,7 +93,7 @@ const DrinkDetail = () => {
                 />
               </div>
               <button
-                className="btn btn-outline-danger w-50 m-auto"
+                className="btn button-hover w-50 m-auto"
                 onClick={() => getLocation()}>
                 Show Place
               </button>
