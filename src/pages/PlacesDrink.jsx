@@ -119,7 +119,7 @@ const PlacesDrink = ({ drinkType }) => {
                       <p>Comment: </p>
                       <em>{item?.reviews[0]?.text}</em>
                     </small>
-                    <div className="mt-4 d-flex justify-content-center align-bottom text-center w-100">
+                    <div className="view mt-4 d-flex justify-content-center align-bottom text-center w-100">
                       <a
                         target="_blank"
                         rel="noreferrer"

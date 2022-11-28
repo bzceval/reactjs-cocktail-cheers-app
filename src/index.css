@@ -193,7 +193,7 @@ select option:nth-child(1) {
 
 /* Search */
 .places-container .search-container {
-  border-radius: 10px;
+  border-radius: 10px; 
   border: 5px dashed;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.1);
@@ -214,7 +214,7 @@ select option:nth-child(1) {
   width: 60%;
   margin: auto;
   padding: 10px 0px !important;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 .places-container input:focus {
   background-color: rgba(0, 0, 0, 0.1);
@@ -307,6 +307,10 @@ select option:nth-child(1) {
 .comments p {
   margin-bottom: 5px;
   font-weight: bold;
+}
+.view a {
+  font-size: .9rem !important; 
+  color: #d8d7dab5 !important;
 }
 .btn-danger {
   background-color: rgba(0, 0, 0, 0.1) !important;
