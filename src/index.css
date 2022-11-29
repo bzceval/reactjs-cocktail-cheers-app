@@ -9,6 +9,10 @@ body {
   color: #d8d7da !important;
   font-family: "Montserrat", sans-serif;
 }
+.nav-link.active {
+  background-color: #2d304a !important;
+  border-radius: 5px;
+}
 header {
   background-color: rgba(0, 0, 0, 0.3) !important;
   font-family: "Montserrat", sans-serif;
