@@ -15,7 +15,7 @@ const Home = () => {
   };
 
   useEffect(() => {
-    if (randomDrink.length < 8) {
+    if (randomDrink.length < 20) {
       getRandomDrink();
     }
   }, [randomDrink]);
@@ -25,13 +25,15 @@ const Home = () => {
       <div className="hero-container">
         <h1> Welcome To Cocktail Flow</h1>
         <p>The Definitive Cocktail Encyclopaedia</p>
+        
       </div>
       <div className="context">
         <section class="slide-option">
           <div class="container"></div>
           <div id="infinite" class="highway-slider">
             <div class="container highway-barrier">
-              <h5 className="mb-2">Random Cocktail </h5>
+            <hr/>
+              <h5 className="mb-1">Random Cocktail </h5>
               <ul class="highway-lane">
                 {randomDrink.map((item) => (
                   <li class="highway-car rounded shadow">
