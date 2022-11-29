@@ -91,7 +91,13 @@ const PlacesDrink = ({ drinkType }) => {
       <div className="container my-5">
         {loading && (
           <div className="w-full text-center">
-            <img src={loadingGif} alt="loading" className="img-fluid" />
+            <img
+              src={loadingGif}
+              alt="loading"
+              className="img-fluid"
+              width="300px"
+              height="300px"
+            />
           </div>
         )}
         {images || loading ? (
@@ -101,6 +107,7 @@ const PlacesDrink = ({ drinkType }) => {
             <img
               src={firstImg}
               width="300px"
+              height="300px"
               alt="loading"
               className="img-fluid"
             />
