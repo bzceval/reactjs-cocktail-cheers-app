@@ -23,9 +23,15 @@ const Home = () => {
   return (
     <div className="hero text-center">
       <div className="hero-container">
-        <h1> Welcome To Cocktail Flow</h1>
+        <h1> Welcome To Cheers</h1>
         <p>The Definitive Cocktail Encyclopaedia</p>
         
+        <div className="card home-card pt-5 pb-5">
+          <h5>Search Cocktail, Find Place and Drink It!</h5>
+          <div className="container">
+          <p>You can find the closest place to you by searching for the drink you want, or you can prepare it yourself by looking at the encyclopedia.</p>
+          </div>
+        </div>
       </div>
       <div className="context">
         <section class="slide-option">
