@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import SelectDrink from "../components/SelectDrinks/SelectDrink";
+import firstImg from "../helpers/firstImage.gif";
 import "../index.css";
 
 const Drinks = () => {
@@ -29,6 +30,18 @@ const Drinks = () => {
           ))}
         </select>
       </div>
+      {selectDrink ? (
+        ""
+      ) : (
+        <div className="w-full text-center mt-4">
+          <img
+            src={firstImg}
+            width="300px"
+            alt="loading"
+            className="img-fluid"
+          />
+        </div>
+      )}
       <div className="drinks-card-container my-5">
         <h1 className="text-center">{selectDrink}</h1>
         {selectDrink && <SelectDrink selectDrink={selectDrink} />}

@@ -193,7 +193,7 @@ select option:nth-child(1) {
 
 /* Search */
 .places-container .search-container {
-  border-radius: 10px; 
+  border-radius: 10px;
   border: 5px dashed;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.1);
@@ -309,7 +309,7 @@ select option:nth-child(1) {
   font-weight: bold;
 }
 .view a {
-  font-size: .9rem !important; 
+  font-size: 0.9rem !important;
   color: #d8d7dab5 !important;
 }
 .btn-danger {
@@ -320,42 +320,42 @@ select option:nth-child(1) {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-/*Home*/ 
+/*Home*/
 .hero {
   position: relative;
 }
 .hero-container {
   width: 100%;
-  position: absolute; 
-  top: 20%; 
+  position: absolute;
+  top: 20%;
 }
 .hero-container h1 {
-  font-family: 'Great Vibes', cursive;
+  font-family: "Great Vibes", cursive;
   font-size: 75px;
   padding: 5px;
 }
 .hero-container p {
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
-  color: #d8d7daab; 
+  color: #d8d7daab;
 }
 .hero .context {
   width: 100%;
-  position: absolute; 
+  position: absolute;
   top: 45%;
   display: flex;
 }
-.hero .context h1{
+.hero .context h1 {
   text-align: center;
   color: #d8d7da;
   font-size: 50px;
 }
-.hero .area{
-  background: transparent;   
+.hero .area {
+  background: transparent;
   width: 100%;
-  height:100vh;
+  height: 100vh;
 }
-.hero .circles{
+.hero .circles {
   position: absolute;
   top: 0;
   left: 0;
@@ -363,7 +363,7 @@ select option:nth-child(1) {
   height: 100%;
   overflow: hidden;
 }
-.hero .circles li{
+.hero .circles li {
   position: absolute;
   display: block;
   list-style: none;
@@ -373,65 +373,65 @@ select option:nth-child(1) {
   animation: animate 25s linear infinite;
   bottom: -150px;
 }
-.hero .circles li:nth-child(1){
+.hero .circles li:nth-child(1) {
   left: 25%;
   width: 80px;
   height: 80px;
   animation-delay: 0s;
 }
-.hero .circles li:nth-child(2){
+.hero .circles li:nth-child(2) {
   left: 10%;
   width: 20px;
   height: 20px;
   animation-delay: 2s;
   animation-duration: 12s;
 }
-.hero .circles li:nth-child(3){
+.hero .circles li:nth-child(3) {
   left: 70%;
   width: 20px;
   height: 20px;
   animation-delay: 4s;
 }
-.hero .circles li:nth-child(4){
+.hero .circles li:nth-child(4) {
   left: 40%;
   width: 60px;
   height: 60px;
   animation-delay: 0s;
   animation-duration: 18s;
 }
-.hero .circles li:nth-child(5){
+.hero .circles li:nth-child(5) {
   left: 65%;
   width: 20px;
   height: 20px;
   animation-delay: 0s;
 }
-.hero .circles li:nth-child(6){
+.hero .circles li:nth-child(6) {
   left: 75%;
   width: 110px;
   height: 110px;
   animation-delay: 3s;
 }
-.hero .circles li:nth-child(7){
+.hero .circles li:nth-child(7) {
   left: 35%;
   width: 150px;
   height: 150px;
   animation-delay: 7s;
 }
-.hero .circles li:nth-child(8){
+.hero .circles li:nth-child(8) {
   left: 50%;
   width: 25px;
   height: 25px;
   animation-delay: 15s;
   animation-duration: 45s;
 }
-.hero .circles li:nth-child(9){
+.hero .circles li:nth-child(9) {
   left: 20%;
   width: 15px;
   height: 15px;
   animation-delay: 2s;
   animation-duration: 35s;
 }
-.hero .circles li:nth-child(10){
+.hero .circles li:nth-child(10) {
   left: 85%;
   width: 150px;
   height: 150px;
@@ -439,19 +439,17 @@ select option:nth-child(1) {
   animation-duration: 11s;
 }
 @keyframes animate {
-
-  0%{
-      transform: translateY(0) rotate(0deg);
-      opacity: 1;
-      border-radius: 100%;
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 100%;
   }
 
-  100%{
-      transform: translateY(-1000px) rotate(720deg);
-      opacity: 0;
-      border-radius: 100%;
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 100%;
   }
-
 }
 
 /********* HOVER BUTTON *********/
@@ -535,7 +533,7 @@ select option:nth-child(1) {
   }
 }
 
-/*home card animation*/ 
+/*home card animation*/
 section {
   display: flex;
   flex-flow: column;
@@ -544,11 +542,11 @@ section {
 }
 section div.container {
   width: 100%;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 section div.container h1 {
   margin: 50px 0 0 0;
-} 
+}
 section.slide-option {
   margin: 0 0 50px 0;
 }
@@ -565,10 +563,10 @@ div.highway-slider div.highway-barrier {
   overflow: hidden;
   position: relative;
 }
-div.highway-slider div.highway-barrier  h5 {
+div.highway-slider div.highway-barrier h5 {
   color: rgba(0, 0, 0, 0.4);
   text-transform: uppercase;
-  font-size: 30px; 
+  font-size: 30px;
 }
 div.highway-slider ul.highway-lane {
   display: flex;
@@ -580,53 +578,64 @@ div.highway-slider ul.highway-lane li.highway-car {
   justify-content: center;
   align-items: center;
   color: #d8d7da;
-  border: 1px solid #2d304a !important; 
+  border: 1px solid #2d304a !important;
 }
-div.highway-slider ul.highway-lane li.highway-car img { 
+div.highway-slider ul.highway-lane li.highway-car img {
   height: 100%;
 }
 @keyframes translatestf {
   0% {
     transform: translateX(100%);
- }
+  }
   100% {
     transform: translateX(-600%);
- }
+  }
 }
 #stffull div.highway-barrier ul.highway-lane {
   width: 500%;
 }
 #stffull div.highway-barrier ul.highway-lane li.highway-car {
   animation: translatestf 30s linear infinite;
-} 
+}
 @keyframes translateinfinite {
-  100% { 
+  100% {
     transform: translateX(calc(-2160px));
   }
-} 
-#infinite div.highway-barrier::before, #infinite div.highway-barrier::after {
+}
+#infinite div.highway-barrier::before,
+#infinite div.highway-barrier::after {
   content: " ";
   position: absolute;
-  z-index: 9; 
+  z-index: 9;
   width: 100%;
   height: 100%;
 }
 #infinite div.highway-barrier::before {
   top: 0;
   left: 0;
+  background: linear-gradient(
+    to right,
+    rgba(45, 48, 74, 1) 0%,
+    rgba(255, 255, 255, 0) 15%
+  );
 }
 #infinite div.highway-barrier::after {
   top: 0;
   right: 0;
+  background: linear-gradient(
+    to left,
+    rgba(45, 48, 74, 1) 0%,
+    rgba(255, 255, 255, 0) 15%
+  );
 }
-#infinite div.highway-barrier ul.highway-lane { 
+#infinite div.highway-barrier ul.highway-lane {
   width: 100%;
 }
 #infinite div.highway-barrier ul.highway-lane li.highway-car {
   animation: translateinfinite 25s linear infinite;
   font-size: 20px;
-  margin: 50px 100px; 
+  margin: 50px 100px;
 }
 #infinite div.highway-barrier ul.highway-lane li.highway-car span {
-  width: 150px; 
+  width: 180px;
 }

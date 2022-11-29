@@ -31,10 +31,10 @@ const Home = () => {
           <div class="container"></div>
           <div id="infinite" class="highway-slider">
             <div class="container highway-barrier">
-            <h5 className="mb-2">Random Cocktail </h5>
-              <ul class="highway-lane"> 
+              <h5 className="mb-2">Random Cocktail </h5>
+              <ul class="highway-lane">
                 {randomDrink.map((item) => (
-                  <li class="highway-car rounded shadow"> 
+                  <li class="highway-car rounded shadow">
                     <img
                       width="150"
                       className="rounded shadow"
