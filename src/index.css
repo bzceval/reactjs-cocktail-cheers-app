@@ -322,10 +322,11 @@ select option:nth-child(1) {
 
 /*Home*/
 .home-card {
-  line-height: 2.5rem; 
+  line-height: 2.3rem; 
 }
 .hero {
   position: relative;
+  height: 1000px;
 }
 .hero-container {
   width: 100%;
@@ -334,7 +335,7 @@ select option:nth-child(1) {
 }
 .hero-container h1 {
   font-family: "Great Vibes", cursive;
-  font-size: 75px;
+  font-size: 60px;
   padding: 5px;
 }
 .hero-container p {
@@ -345,7 +346,7 @@ select option:nth-child(1) {
 .hero .context {
   width: 100%;
   position: absolute;
-  top: 50%;
+  top: 60%;
   display: flex;
 }
 .hero .context h1 {
