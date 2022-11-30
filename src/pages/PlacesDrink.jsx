@@ -42,7 +42,7 @@ const PlacesDrink = ({ drinkType }) => {
   const getData = async () => {
     setLoading(true);
 
-    const urlPlaces = `http://list.ly/api/v4/search/place?ll=${latitude}%2C${longtitude}&q=${searchData}`;
+    const urlPlaces = `https://list.ly/api/v4/search/place?ll=${latitude}%2C${longtitude}&q=${searchData}`;
     try {
       const { data } = await axios(urlPlaces);
       // console.log(data);
