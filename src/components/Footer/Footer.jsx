@@ -1,5 +1,5 @@
 import { BsGithub, BsLinkedin } from "react-icons/bs";
-import { Link, Navigate } from "react-router-dom";
+import "../../index.css";
 
 const Footer = () => {
   return (
@@ -14,25 +14,25 @@ const Footer = () => {
                 href="https://www.linkedin.com/in/busra-zulal-ceval/"
                 target="_blank"
                 rel="noreferrer">
-                <BsLinkedin />
+                <BsLinkedin className="bzc" />
               </a>
               <a
                 href="https://github.com/bzceval"
                 target="_blank"
                 rel="noreferrer">
-                <BsGithub />
+                <BsGithub className="bzc" />
               </a>
               <a
                 href="https://www.linkedin.com/in/murathudavendigaroncu/"
                 target="_blank"
                 rel="noreferrer">
-                <BsLinkedin />
+                <BsLinkedin className="mho" />
               </a>
               <a
                 href="https://github.com/murathudavendigar"
                 target="_blank"
                 rel="noreferrer">
-                <BsGithub />
+                <BsGithub className="mho" />
               </a>
             </div>
           </div>

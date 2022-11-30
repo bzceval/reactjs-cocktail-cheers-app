@@ -639,3 +639,33 @@ div.highway-slider ul.highway-lane li.highway-car img {
 #infinite div.highway-barrier ul.highway-lane li.highway-car span {
   width: 180px;
 }
+
+.form-control {
+  background-color: #292b43 !important;
+  color: #fff !important;
+}
+
+.form-control:focus {
+  border-color: #eee !important;
+}
+
+.form-control:-webkit-autofill {
+  box-shadow: 0 0 0px 1000px #292b43 inset !important;
+  -webkit-text-fill-color: #fff !important;
+}
+
+.bzc {
+  transition: color 0.4s;
+}
+
+.bzc:hover {
+  color: rgb(169, 168, 255);
+}
+
+.mho {
+  transition: color 0.4s;
+}
+
+.mho:hover {
+  color: rgba(79, 79, 182, 0.589);
+}
