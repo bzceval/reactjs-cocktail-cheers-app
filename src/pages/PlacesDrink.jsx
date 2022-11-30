@@ -34,7 +34,7 @@ const PlacesDrink = ({ drinkType }) => {
         }
       );
     }
-    console.log(latitude);
+    // console.log(latitude);
   };
 
   //!!!!!!!!!!!!!!!!!!!!!!!!!!!!! FETCH DATA

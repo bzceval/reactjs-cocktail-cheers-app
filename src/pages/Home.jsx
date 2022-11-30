@@ -8,7 +8,7 @@ const Home = () => {
       const res = await fetch(url);
       const data = await res.json();
       setRandomDrink([...randomDrink, data?.drinks[0]]);
-      console.log(randomDrink);
+      // console.log(randomDrink);
     } catch (error) {
       console.log(error);
     }
