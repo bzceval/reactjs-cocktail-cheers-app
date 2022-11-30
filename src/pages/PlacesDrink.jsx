@@ -71,7 +71,6 @@ const PlacesDrink = ({ drinkType }) => {
   return (
     <div className="places-container">
       <div className="search-container pt-5 pb-5">
-        {/* <h5 className="mt-3 mb-3 text-center">Search Device Coffee</h5> */}
         <input
           type="search"
           className="form-control text-center"
@@ -100,7 +99,7 @@ const PlacesDrink = ({ drinkType }) => {
           <div className="w-full text-center">
             <img
               src={firstImg}
-              width="300px"
+              width="400px"
               alt="loading"
               className="img-fluid"
             />

@@ -20,18 +20,18 @@ const Home = () => {
     }
   }, [randomDrink]);
 
-  return (
-    <div className="hero text-center">
-      <div className="hero-container">
-        <h1> Welcome To Cheers</h1>
+  return ( 
+    <>
+    <div className="hero text-center py-5">
+    <h1> Welcome To Cheers</h1>
         <p>The Definitive Cocktail Encyclopaedia</p>
-        
-        <div className="card home-card pt-4 pb-4">
+        <div className="card home-card pt-3 pb-3">
           <h5>Search Cocktail, Find Place and Drink It!</h5>
           <div className="container">
           <p>You can find the closest place to you by searching for the drink you want, or you can prepare it yourself by looking at the encyclopedia.</p>
           </div>
         </div>
+      <div className="hero-container">
       </div>
       <div className="context">
         <section class="slide-option">
@@ -71,7 +71,8 @@ const Home = () => {
           <li />
         </ul>
       </div>
-    </div>
+    </div> 
+    </> 
   );
 };
 
