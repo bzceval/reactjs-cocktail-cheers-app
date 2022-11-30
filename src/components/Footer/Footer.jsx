@@ -7,8 +7,8 @@ const Footer = () => {
       <div className="container">
         <div className="row">
           <div className="text-center">
-            <h3>Project Description</h3>
-            <p className="small">Search cocktails, Find places and Drink it!</p>
+            <h4>The Definitive Cocktail Encyclopaedia</h4>
+            <p className="small">Search Cocktail, Find Place and Drink It!</p>
             <div className="col fs-5">
               <a
                 href="https://www.linkedin.com/in/busra-zulal-ceval/"
