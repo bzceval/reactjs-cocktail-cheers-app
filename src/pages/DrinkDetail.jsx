@@ -63,7 +63,7 @@ const DrinkDetail = () => {
             <hr />
           </div>
           <div className="nested">
-            <div className="row row-container">
+            <div className="row row-container text-center">
               <div className="col shadow p-3 mb-5">
                 <small className="opacity-50 text-nowrap">
                   {selectDrink?.strAlcoholic} {selectDrink?.strCategory}
@@ -88,7 +88,8 @@ const DrinkDetail = () => {
               <div className="col text-center mb-5">
                 <img
                   src={selectDrink?.strDrinkThumb}
-                  height="350"
+                  height="300"
+                  width="215px"
                   alt={drink.strDrink}
                 />
               </div>
