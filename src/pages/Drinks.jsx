@@ -36,7 +36,7 @@ const Drinks = () => {
         <div className="w-full text-center mt-4">
           <img
             src={firstImg}
-            width="300px"
+            width="400px"
             alt="loading"
             className="img-fluid"
           />
