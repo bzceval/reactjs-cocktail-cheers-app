@@ -90,7 +90,13 @@ const PlacesDrink = ({ drinkType }) => {
       <div className="container my-5">
         {loading && (
           <div className="w-full text-center">
-            <img src={loadingGif} alt="loading" className="img-fluid" />
+            <img
+              src={loadingGif}
+              alt="loading"
+              className="img-fluid"
+              width="300px"
+              height="300px"
+            />
           </div>
         )}
         {images || loading ? (
@@ -99,6 +105,7 @@ const PlacesDrink = ({ drinkType }) => {
           <div className="w-full text-center">
             <img
               src={firstImg}
+              height="300px"
               width="400px"
               alt="loading"
               className="img-fluid"
@@ -122,7 +129,6 @@ const PlacesDrink = ({ drinkType }) => {
                   <h5 className="card-title">{item?.name.toUpperCase()}</h5>
                   <hr />
                   <p className="card-text">
-                    {" "}
                     <span>Address:</span>
                     <br /> {item?.formatted_address}
                   </p>
