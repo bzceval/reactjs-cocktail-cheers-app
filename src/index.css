@@ -321,6 +321,11 @@ select option:nth-child(1) {
 .home-card {
   line-height: 2.3rem; 
 }
+.home-description { 
+  top: 10%;
+  width: 100%;
+  position: absolute;
+}
 .hero {
   position: relative;  
 }
@@ -448,8 +453,7 @@ select option:nth-child(1) {
     opacity: 0;
     border-radius: 100%;
   }
-}
-
+} 
 /********* HOVER BUTTON *********/
 
 .button-hover {
