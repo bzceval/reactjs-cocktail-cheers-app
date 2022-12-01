@@ -22,7 +22,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="hero text-center py-5 my-5">
+      <div className="hero text-center py-5">
         <h1 className="p-2"> Welcome To Cheers</h1> 
         <div className="card my-4 home-card pt-3 pb-3">
           <h5 className="p-2">Search Cocktail, Find Place and Drink It!</h5>
