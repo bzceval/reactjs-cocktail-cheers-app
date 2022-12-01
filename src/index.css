@@ -668,7 +668,7 @@ div.highway-slider ul.highway-lane li.highway-car img {
   color: rgba(79, 79, 182, 0.589);
 }
 .form-auth {
-  height: 80vh;
+  height: 100%;
   display: flex;
   flex-direction: column; 
   justify-content: center;
