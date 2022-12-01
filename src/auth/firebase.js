@@ -31,7 +31,7 @@ export const register = async (email, password, fullname, navigate) => {
     await updateProfile(auth.currentUser, {
       displayName: fullname,
     });
-    console.log(user);
+    // console.log(user);
     navigate("/");
   } catch (error) {
     console.log(error);
@@ -58,7 +58,7 @@ export const signUpGoogle = (navigate) => {
   const provider = new GoogleAuthProvider();
   signInWithPopup(auth, provider)
     .then((result) => {
-      console.log(result);
+      // console.log(result);
       navigate("/");
     })
     .catch((error) => {
