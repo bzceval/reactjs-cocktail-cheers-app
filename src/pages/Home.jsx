@@ -30,7 +30,8 @@ const Home = () => {
             <p className="p-2">
               You can find the closest place to you by searching for the drink
               you want, or you can prepare it yourself by looking at the
-              encyclopedia.
+              encyclopedia. 
+              
             </p>
           </div>
         </div>
