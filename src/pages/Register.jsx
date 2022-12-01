@@ -26,8 +26,8 @@ const Register = () => {
   };
 
   return (
-    <div className="container">
-      <div className="d-flex justify-content-between align-items-center ">
+    <div className="container form-auth">
+      <div className="d-flex justify-content-between align-items-center p-2">
         <div className="d-none d-lg-block">
           <img src={backGroundImage} alt="" />
         </div>
@@ -36,7 +36,7 @@ const Register = () => {
             <div className="col-sm-9 mx-auto">
               <div className="card border-0 shadow rounded-3 my-5">
                 <div className="card-body p-4 p-sm-5">
-                  <h5 className="card-title text-center mb-5 fw-light fs-5">
+                  <h5 className="card-title text-center mb-5  display-6 fw-light fs-2">
                     Sign Up
                   </h5>
                   <form onSubmit={handleSubmit}>
@@ -85,7 +85,7 @@ const Register = () => {
                           className="m-auto"
                         />
                       ) : (
-                        <div className="d-grid">
+                        <div className="d-grid mt-3">
                           <button
                             className="btn btn-outline-primary btn-login text-uppercase fw-bold"
                             type="submit"
@@ -93,16 +93,15 @@ const Register = () => {
                             Sign Up
                           </button>
                           <p className="text-center mt-3">
-                            Do you have an account ?{" "}
-                            <Link to="/login">Sign In</Link>
+                            Do you have an account ?
+                            <Link to="/login"> Sign In</Link>
                           </p>
                         </div>
                       )}
-                    </div>
-                    <hr className="my-4" />
+                    </div> 
                     <div className="d-grid mb-2">
                       <button
-                        className="btn btn-outline-danger btn-login text-uppercase fw-bold"
+                        className="my-4 btn btn-outline-danger btn-login text-uppercase fw-bold"
                         type="submit"
                         onClick={registerWithGoogle}>
                         <BsGoogle className="fs-6 me-3 mb-1" />
