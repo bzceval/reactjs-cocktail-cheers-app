@@ -87,9 +87,8 @@ const DrinkDetail = () => {
               </div>
               <div className="col mb-5">
                 <img
-                  src={selectDrink?.strDrinkThumb}
-                  height="350"
-                  width="300"
+                  src={selectDrink?.strDrinkThumb} 
+                  width="210"
                   alt={drink.strDrink}
                 />
               </div>
