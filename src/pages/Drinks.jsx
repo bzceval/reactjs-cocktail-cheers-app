@@ -25,8 +25,10 @@ const Drinks = () => {
         <h4>Please Select Drink</h4>
         <select onChange={(e) => setselectDrink(e.target.value)}>
           <option selected>Please Select Drink </option>
-          {drinksCategory.map((drink) => (
-            <option className="option-drinks">{drink.strCategory}</option>
+          {drinksCategory.map((drink, index) => (
+            <option className="option-drinks" key={index}>
+              {drink.strCategory}
+            </option>
           ))}
         </select>
       </div>
