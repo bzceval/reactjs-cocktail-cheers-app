@@ -11,12 +11,12 @@ import {
 } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCvasyPEo9K7uPRhkiPlJtSs1g54lBjagQ",
-  authDomain: "reactjs-device-cafe-app.firebaseapp.com",
-  projectId: "reactjs-device-cafe-app",
-  storageBucket: "reactjs-device-cafe-app.appspot.com",
-  messagingSenderId: "1092057837178",
-  appId: "1:1092057837178:web:e09f68af61e89332b9d5c3",
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGİNG_SENDER_ID,
+  appId: process.env.REACT_APP_APP_ID,
 };
 
 const app = initializeApp(firebaseConfig);

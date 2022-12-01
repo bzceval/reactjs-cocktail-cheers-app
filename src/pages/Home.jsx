@@ -8,7 +8,7 @@ const Home = () => {
       const res = await fetch(url);
       const data = await res.json();
       setRandomDrink([...randomDrink, data?.drinks[0]]);
-      console.log(randomDrink);
+      // console.log(randomDrink);
     } catch (error) {
       console.log(error);
     }
@@ -20,7 +20,7 @@ const Home = () => {
     }
   }, [randomDrink]);
 
-  return ( 
+  return (
     <>
     <div className="hero text-center py-5">
       <div className="home-description">
@@ -29,7 +29,11 @@ const Home = () => {
         <div className="card home-card pt-3 pb-3">
           <h5>Search Cocktail, Find Place and Drink It!</h5>
           <div className="container">
-          <p>You can find the closest place to you by searching for the drink you want, or you can prepare it yourself by looking at the encyclopedia.</p>
+            <p>
+              You can find the closest place to you by searching for the drink
+              you want, or you can prepare it yourself by looking at the
+              encyclopedia.
+            </p>
           </div>
         </div>
         </div>
@@ -55,26 +59,26 @@ const Home = () => {
                   </li>
                 ))}
               </ul>
+
             </div>
-          </div>
-        </section>
+          </section>
+        </div>
+        <div className="area">
+          <ul className="circles">
+            <li />
+            <li />
+            <li />
+            <li />
+            <li />
+            <li />
+            <li />
+            <li />
+            <li />
+            <li />
+          </ul>
+        </div>
       </div>
-      <div className="area">
-        <ul className="circles">
-          <li />
-          <li />
-          <li />
-          <li />
-          <li />
-          <li />
-          <li />
-          <li />
-          <li />
-          <li />
-        </ul>
-      </div>
-    </div> 
-    </> 
+    </>
   );
 };
 
