@@ -15,5 +15,4 @@ In this repo, the cocktail web application was made using firebase auth operatio
 - Pulling various data from api such as axios fetch and placing data on different pages with react router dom. 
 
 ## DEMO
-https://user-images.githubusercontent.com/100320309/204958554-1750382b-631b-44e2-97d5-a46df6ab2c80.mp4
-
+![ezgif com-gif-maker (4)](https://user-images.githubusercontent.com/100320309/204961075-9f2b7dcd-1b10-447d-8c09-bd3b16f077a9.gif)
