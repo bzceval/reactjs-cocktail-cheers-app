@@ -1,7 +1,13 @@
-import React, { createContext, useEffect, useState } from "react";
+import React, { createContext, useContext, useEffect, useState } from "react";
 import { userControl } from "../auth/firebase";
 
 export const MainContext = createContext();
+
+//!!!!!!---- CUSTOM HOOK ------!!!!!
+
+export const useAuthContext = () => {
+  return useContext(MainContext);
+};
 
 const ContextProvider = ({ children }) => {
   const [currentUser, setCurrentUser] = useState();
