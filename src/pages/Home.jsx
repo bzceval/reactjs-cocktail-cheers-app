@@ -22,13 +22,13 @@ const Home = () => {
 
   return (
     <>
-      <div className="hero text-center py-5">
-        <h1> Welcome To Cheers</h1>
-        <p>The Definitive Cocktail Encyclopaedia</p>
+      <div className="hero text-center py-5 my-5">
+        <h1 className="p-2"> Welcome To Cheers</h1>
+        <p className="p-2">The Definitive Cocktail Encyclopaedia</p>
         <div className="card home-card pt-3 pb-3">
-          <h5>Search Cocktail, Find Place and Drink It!</h5>
+          <h5 className="p-2">Search Cocktail, Find Place and Drink It!</h5>
           <div className="container">
-            <p>
+            <p className="p-2">
               You can find the closest place to you by searching for the drink
               you want, or you can prepare it yourself by looking at the
               encyclopedia.
@@ -40,7 +40,7 @@ const Home = () => {
           <section class="slide-option">
             <div class="container"></div>
             <div id="infinite" class="highway-slider">
-              <div class="container highway-barrier">
+              <div class="container highway-barrier mb-3">
                 <hr className="my-5" />
                 <h5 className="mb-1 ">Random Cocktail </h5>
                 <ul class="highway-lane">
