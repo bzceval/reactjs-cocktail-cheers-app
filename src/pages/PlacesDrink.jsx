@@ -83,7 +83,7 @@ const PlacesDrink = ({ drinkType }) => {
         <button
           className="btn px-4 mt-3 button-hover"
           onClick={getData}
-          disabled={!searchData}>
+          disabled={!searchData?.trim()}>
           Search
         </button>
       </div>

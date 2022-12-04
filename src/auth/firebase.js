@@ -26,12 +26,12 @@ export const auth = getAuth(app);
 //!!!!!!!!!!!!!!!!!!!!!!!!!!!!! REGISTER
 export const register = async (email, password, fullname, navigate) => {
   try {
-    let user = await createUserWithEmailAndPassword(auth, email, password);
+    await createUserWithEmailAndPassword(auth, email, password);
 
     await updateProfile(auth.currentUser, {
       displayName: fullname,
     });
-    console.log(user);
+
     navigate("/");
   } catch (error) {
     console.log(error);
@@ -58,7 +58,7 @@ export const signUpGoogle = (navigate) => {
   const provider = new GoogleAuthProvider();
   signInWithPopup(auth, provider)
     .then((result) => {
-      console.log(result);
+      // console.log(result);
       navigate("/");
     })
     .catch((error) => {

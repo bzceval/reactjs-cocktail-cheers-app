@@ -30,29 +30,28 @@ const Home = () => {
             <p className="p-2">
               You can find the closest place to you by searching for the drink
               you want, or you can prepare it yourself by looking at the
-              encyclopedia. 
-              
+              encyclopedia.
             </p>
           </div>
         </div>
         <div className="hero-container"></div>
         <div className="context">
-          <section class="slide-option">
-            <div class="container"></div>
-            <div id="infinite" class="highway-slider">
-              <div class="container highway-barrier mb-3">
+          <section className="slide-option">
+            <div className="container"></div>
+            <div id="infinite" className="highway-slider">
+              <div className="container highway-barrier">
                 <hr className="my-5" />
                 <h5 className="mb-1 ">Random Cocktail </h5>
-                <ul class="highway-lane">
-                  {randomDrink.map((item) => (
-                    <li class="highway-car rounded shadow">
+                <ul className="highway-lane">
+                  {randomDrink.map((item, index) => (
+                    <li className="highway-car rounded shadow" key={index}>
                       <img
                         width="150"
                         className="rounded shadow"
                         src={item.strDrinkThumb}
                         alt=""
                       />
-                      <span class="fab mx-4">{item.strDrink}</span>
+                      <span className="fab mx-4">{item.strDrink}</span>
                     </li>
                   ))}
                 </ul>

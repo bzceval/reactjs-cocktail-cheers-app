@@ -20,10 +20,12 @@ const Drink = ({ selectDrink }) => {
   return (
     <div className="container">
       <div className="row ">
-        {queryDrink?.map((item) => {
+        {queryDrink?.map((item, index) => {
           const { idDrink, strDrinkThumb, strDrink } = item;
           return (
-            <div className="col-md-4 flip-card my-5 d-flex justify-content-center ">
+            <div
+              className="col-md-4 flip-card my-5 d-flex justify-content-center "
+              key={index}>
               <div className="flip-card-inner">
                 <div className="flip-card-front">
                   <div key={idDrink} className="card shadow-sm">

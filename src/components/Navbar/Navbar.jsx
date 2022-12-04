@@ -1,17 +1,19 @@
-import React, { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { logout } from "../../auth/firebase";
-import { MainContext } from "../../context/ContextProvider";
-import Logo from '../../helpers/logo.png'
+import { useAuthContext } from "../../context/ContextProvider";
+import Logo from "../../helpers/logo.png";
 
 const Navbar = () => {
-  const { currentUser } = useContext(MainContext);
+  const { currentUser } = useAuthContext();
 
   return (
     <header className="p-3">
       <div className="container">
         <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-          <NavLink to="/"> <img src={Logo} alt="" width="60"/> </NavLink>
+          <NavLink to="/">
+            {" "}
+            <img src={Logo} alt="" width="60" />{" "}
+          </NavLink>
           <ul className="nav col-12 col-lg-auto mx-auto me-lg-auto mb-2 justify-content-center mb-md-0">
             <li>
               <NavLink to="/" className="nav-link px-4">

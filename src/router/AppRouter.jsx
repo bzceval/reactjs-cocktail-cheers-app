@@ -8,6 +8,7 @@ import Home from "../pages/Home";
 import Login from "../pages/Login";
 import PlacesDrink from "../pages/PlacesDrink";
 import Register from "../pages/Register";
+import PrivateRouter from "./PrivateRouter";
 
 const AppRouter = () => {
   return (
@@ -15,15 +16,22 @@ const AppRouter = () => {
       <Navbar />
       <Routes>
         <Route index element={<Home />} />
-        <Route path="/places-drink" element={<PlacesDrink />} />
-        <Route path="/drinks" element={<Drinks />} />
-        <Route path="/drinks/:id" element={<DrinkDetail />} />
         <Route path="/login" element={<Login />} />
         <Route path="/sign-up" element={<Register />} />
+        <Route path="/places-drink" element={<PrivateRouter />}>
+          <Route path="" element={<PlacesDrink />} />
+        </Route>
+        <Route path="/drinks" element={<PrivateRouter />}>
+          <Route path="" element={<Drinks />} />
+        </Route>
+        <Route path="/drinks/:id" element={<PrivateRouter />}>
+          <Route path="" element={<DrinkDetail />} />
+        </Route>
+        <Route path="*" element={<Home />} />
       </Routes>
       <Footer />
     </BrowserRouter>
-  )
-}
+  );
+};
 
-export default AppRouter
+export default AppRouter;
