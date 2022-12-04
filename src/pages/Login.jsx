@@ -27,8 +27,8 @@ const Login = () => {
   };
 
   return (
-    <div className="container">
-      <div className="d-flex justify-content-between align-items-center ">
+    <div className="container form-auth">
+      <div className="d-flex justify-content-between align-items-center p-2">
         <div className="d-none d-lg-block">
           <img src={backGroundImage} alt="" />
         </div>
@@ -37,7 +37,7 @@ const Login = () => {
             <div className="col-sm-9 mx-auto">
               <div className="card border-0 shadow rounded-3 my-5">
                 <div className="card-body p-4 p-sm-5">
-                  <h5 className="card-title text-center mb-5 fw-light fs-5">
+                  <h5 className="card-title text-center mb-5 display-6 fw-light fs-2">
                     Sign In
                   </h5>
                   <form onSubmit={handleSubmit}>
@@ -61,19 +61,6 @@ const Login = () => {
                       />
                       <label htmlFor="floatingPassword">Password</label>
                     </div>
-                    <div className="form-check mb-3">
-                      <input
-                        className="form-check-input"
-                        type="checkbox"
-                        defaultValue=""
-                        id="rememberPasswordCheck"
-                      />
-                      <label
-                        className="form-check-label"
-                        htmlFor="rememberPasswordCheck">
-                        Remember password
-                      </label>
-                    </div>
                     <div className="d-grid">
                       {loading ? (
                         <img
@@ -84,7 +71,7 @@ const Login = () => {
                           className="m-auto"
                         />
                       ) : (
-                        <div className="d-grid">
+                        <div className="d-grid mt-2">
                           <button
                             className="btn btn-outline-primary btn-login text-uppercase fw-bold"
                             type="submit"
@@ -92,21 +79,20 @@ const Login = () => {
                             Sign In
                           </button>
                           <p className="text-center mt-3">
-                            Don't have an account ?{" "}
-                            <Link to="/sign-up">Sign Up</Link>
+                            Don't have an account ?
+                            <Link to="/sign-up"> Sign Up</Link>
                           </p>
                         </div>
                       )}
                     </div>
-                    <hr className="my-4" />
                     <div className="d-grid mb-2">
                       <button
-                        className="btn btn-outline-danger btn-login text-uppercase fw-bold"
+                        className=" my-4 btn btn-outline-danger btn-login text-uppercase fw-bold"
                         type="submit"
                         onClick={signGoogle}>
                         <BsGoogle className="fs-6 me-3 mb-1" />
                         Sign in with Google
-                      </button>
+                      </button> 
                     </div>
                   </form>
                 </div>

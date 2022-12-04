@@ -23,12 +23,11 @@ const Home = () => {
   return (
     <>
       <div className="hero text-center py-5">
-        <h1> Welcome To Cheers</h1>
-        <p>The Definitive Cocktail Encyclopaedia</p>
-        <div className="card home-card pt-3 pb-3">
-          <h5>Search Cocktail, Find Place and Drink It!</h5>
+        <h1 className="p-2"> Welcome To Cheers</h1> 
+        <div className="card my-4 home-card pt-3 pb-3">
+          <h5 className="p-2">Search Cocktail, Find Place and Drink It!</h5>
           <div className="container">
-            <p>
+            <p className="p-2">
               You can find the closest place to you by searching for the drink
               you want, or you can prepare it yourself by looking at the
               encyclopedia.
